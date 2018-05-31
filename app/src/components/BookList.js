@@ -1,16 +1,9 @@
 import React from "react";
-import { gql } from "apollo-boost";
+
 import { graphql } from "react-apollo";
 import PropTypes from "prop-types";
 
-const getBooksQuery = gql`
-  {
-    books {
-      name
-      id
-    }
-  }
-`;
+import { getBooksQuery } from "../queries/queries";
 
 const listBooks = books =>
   books.map(book => <li key={book.id}>{book.name}</li>);
