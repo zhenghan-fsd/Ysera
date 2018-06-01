@@ -1,2 +1,8 @@
-body {
-  background: #eee; }
+#app {
+  padding: 0px;
+  box-sizing: border-box;
+  width: 60%;
+  height: 100%; }
+  #app h1 {
+    color: #444;
+    text-align: center; }
